@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>비공식 포켓몬 쇼핑몰</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h1 id="movingTitle">포켓몬 덕후를 위한 쇼핑몰</h1>
+        <div class="flex-container">
+        <div><a href="/login">로그인</a></div>
+        <div><a href="/signup">회원가입</a></div></div>
+        <hr>
+        <form action="/" method="post">
+            <div><label for= "generation">Which generation?</label>
+                <select id="generation" name="generation">
+                    <option selected>All</option>
+                    <option>gen1</option>
+                    <option>gen2</option>
+                    <option>gen3</option>
+                    <option>gen4</option>
+                    <option>gen5</option>
+                    <option>gen6</option>
+                    <option>gen7</option>
+                </select></div>
+            <div><label for="searchTerm">Search</label>
+                <input type="text" id="searchTerm" placeholder="e.g. Pokemon Red" name="search"></div>
+            <input type="submit" value="show result">
+            </form>
+        <div class="vertical-container">
+            <div class="vertical-container">
+                <h2>오늘의 특가상품</h2>
+                <hr id="hrInsideBlock">{{goods}}
+            </div>
+            <div class="vertical-container">
+                <h2>잘오셨습니다</h2>
+                <hr id="hrInsideBlock">
+                <p>누구보다도 포켓몬에 진심인 당신! 환영합니다. 이곳은 포켓몬 팬에 의한, 포켓몬 팬을 위한 알짜배기 쇼핑몰입니다.</p>
+            </div>
+        </div>
+    </body>
+</html>

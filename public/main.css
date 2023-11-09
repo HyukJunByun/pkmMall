@@ -1,0 +1,105 @@
+body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+.purple_block{
+    text-align: center;
+    padding: 5px 20px;
+    margin: 1px;
+    border: 3px solid rebeccapurple;
+    width: 70%;
+    height: 20em; 
+}
+#greengreen{
+    color: green;
+    font-size: 1.5em;
+}
+.pink_block{
+    text-align: center;
+    padding: 5px 20px;
+    margin: 1px;
+    border: 3px solid palevioletred;
+    width: 200px; 
+}
+/* lab3 starts from here */
+
+#hrInsideBlock {
+    margin: 0;
+}
+.forText {
+    position: relative;
+}
+.comeText {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#onSale {
+    width: 150px;
+    height: 150px;
+    transition: transform 2s;
+}
+#onSale:hover {
+    transform: scale(1.2, 1.2);
+}
+.forText:hover .comeText {
+    display: block;
+}
+
+.flex-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.vertical-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.horizontal-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#showroom {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.flex-container > div {
+    padding: 10px;
+}
+@media (min-width: 801px){
+    .flex-container {
+        flex-direction: row;
+        justify-content: left;
+    }
+    body {
+        width: 1020px;
+    }
+}
+@media (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    #manyShowrooms {
+        flex-direction: column;
+    }
+    body {
+        width: auto;
+    }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    body {
+        width: auto;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>비공식 포켓몬 쇼핑몰</title>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" type= "text/css" href="main.css">
+    </head>
+    <body>
+        <h1>포켓몬 덕후를 위한 쇼핑몰</h1>
+        <h3>회원가입</h3>
+        <a href="/login">이미 회원이십니까?</a>
+        <a href="/">일단 둘러보기</a>
+        <form>
+            <p>
+                <label><strong>아이디: </strong>
+                    <input name="id" type="text" autofocus/>
+                </label>
+            </p>
+            <p>
+                <label><strong>비밀번호: </strong>
+                    <input name="password" type="password" required/> 
+                </label>
+            </p>
+            <p>
+            <label><strong>이름: </strong>
+                <input name="name" type="text" autocomplete="on"/>
+            </label></p>
+            <p><strong>성별: </strong>
+            <label>남자
+                <input name="gender" type="radio" value="boy" checked/>
+            </label>
+            <label>여자
+                <input name="gender" type="radio" value="girl"/>
+            </label>
+            <label>그 외
+                <input name="gender" type="radio" value="else"/>
+            </label>
+            </p><p>
+                <label><strong>이메일: </strong> 
+                    <input name="email" type="email" placeholder="name@domain.com"/>
+                </label>
+            </p>
+            <p>
+                <label><strong>만 나이: </strong>
+                    <input name="age" type="number" min="1" max="200" step="1"/>
+                </label>
+            </p>
+            <p><div class="purple_block"><strong>플레이해본 포켓몬 게임</strong>(모두 고르시오.)<br><br>
+                <div id="greengreen">
+                <label>포켓몬스터 레드/ 그린/ 블루/ 피카츄
+                    <input name="1_gen" type="checkbox" value="1세대"/>
+                </label><br>
+                <label>포켓몬스터 골드/ 실버/ 크리스탈
+                    <input name="2_gen" type="checkbox" value="2세대"/>
+                </label><br>
+                <label>포켓몬스터 루비/ 사파이어/ 에메랄드
+                    <input name="3_gen" type="checkbox" value="3세대"/>
+                </label>
+                <label>포켓몬스터 파이어레드/ 리프그린
+                    <input name="1_gen_re" type="checkbox" value="1세대_리메"/>
+                </label><br>
+                <label>포켓몬스터 디아루가/ 펄기아/ 기라티나
+                    <input name="4_gen" type="checkbox" value="4세대"/>
+                </label>
+                <label>포켓몬스터 하트골드/ 소울실버
+                    <input name="2_gen_re" type="checkbox" value="2세대_리메"/>
+                </label><br>
+                <label>포켓몬스터 블랙/ 화이트/ 블랙2/ 화이트2
+                    <input name="5_gen" type="checkbox" value="5세대"/>
+                </label><br>
+                <label>포켓몬스터 X/ Y
+                    <input name="6_gen" type="checkbox" value="6세대"/>
+                </label>
+                <label>포켓몬스터 오메가루비/ 알파사파이어
+                    <input name="3_gen_re" type="checkbox" value="3세대_리메"/>
+                </label><br>
+                <label>포켓몬스터 썬/ 문/ 울트라썬/ 울트라문
+                    <input name="7_gen" type="checkbox" value="7세대"/>
+                </label><br>
+                <label>포켓몬스터 소드/ 실드
+                    <input name="8_gen" type="checkbox" value="8세대"/>
+                </label>
+                <label>포켓몬스터 브릴리언트 다이아몬드/ 샤이닝 펄
+                    <input name="4_gen_re" type="checkbox" value="4세대_리메"/>
+                </label><br>
+                <label>포켓몬스터 스칼렛/ 바이올렛
+                    <input name="9_gen" type="checkbox" value="9세대"/>
+                </label>
+            </div></div></p>
+            <label>
+                <input name="submit" type="submit" value="가입하기"/>
+            </label>
+        </form>
+    </body>
+
+</html>
